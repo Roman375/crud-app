@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.container {
+  display: grid;
+  grid-template-areas: 
+  "one two";
+  grid-gap: 30px;
+  padding: 10px;
+}
+.one {
+  grid-area: one;
+}
+.two { 
+  grid-area: two;
+}
+
+.search{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.empty{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.empty svg {
+  margin-right: 5px;
+}
+
