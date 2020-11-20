@@ -1,23 +1,23 @@
 import React, { useState } from 'react'
 
-const AddArticleForm = (props) => {
+const AddAnnouncementForm = (props) => {
   const initialFormState = { id: null, title: '', description: '' }
-  const [article, setArticle] = useState(initialFormState)
+  const [announcement, setAnnouncement] = useState(initialFormState)
 
   const handleInputChange = (event) => {
     const { title, value } = event.target
 
-    setArticle({ ...article, [title]: value })
+    setAnnouncement({ ...announcement, [title]: value })
   }
 
   return (
     <form
       onSubmit={(event) => {
         event.preventDefault()
-        if (!article.title || !article.description) return
+        if (!announcement.title || !announcement.description) return
 
-        props.addArticle(article)
-        setArticle(initialFormState)
+        props.addArticle(announcement)
+        setAnnouncement(initialFormState)
       }}
     >
       <div className="form-group">
@@ -26,7 +26,7 @@ const AddArticleForm = (props) => {
           className="form-control"
           type="text"
           title="title"
-          value={article.title}
+          value={announcement.title}
           onChange={handleInputChange}
         />
       </div>
@@ -37,13 +37,13 @@ const AddArticleForm = (props) => {
           rows="3"
           type="text"
           title="description"
-          value={article.description}
+          value={announcement.description}
           onChange={handleInputChange}
         ></textarea>
       </div>
-      <button className="btn btn-primary">Add new article</button>
+      <button className="btn btn-primary">Add new announcement</button>
     </form>
   )
 }
 
-export default AddArticleForm
+export default AddAnnouncementForm

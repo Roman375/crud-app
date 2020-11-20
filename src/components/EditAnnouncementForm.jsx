@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react'
 
-const EditArticleForm = (props) => {
-  const [article, setArticle] = useState(props.currentArticle)
+const EditAnnouncementForm = (props) => {
+  const [announcement, setAnnouncement] = useState(props.currentArticle)
 
   const handleInputChange = (event) => {
     const { title, value } = event.target
 
-    setArticle({ ...article, [title]: value })
+    setAnnouncement({ ...announcement, [title]: value })
   }
   useEffect(() => {
-    setArticle(props.currentArticle)
+    setAnnouncement(props.currentArticle)
   }, [props])
 
   return (
@@ -17,7 +17,7 @@ const EditArticleForm = (props) => {
       onSubmit={(event) => {
         event.preventDefault()
 
-        props.updateArticle(article.id, article)
+        props.updateArticle(announcement.id, announcement)
       }}
     >
       <div className="form-group">
@@ -26,7 +26,7 @@ const EditArticleForm = (props) => {
           className="form-control"
           type="text"
         title="title"
-        value={article.title}
+        value={announcement.title}
         onChange={handleInputChange}
         />
       </div>
@@ -37,11 +37,11 @@ const EditArticleForm = (props) => {
           rows="3"
           type="text"
         title="description"
-        value={article.description}
+        value={announcement.description}
         onChange={handleInputChange}
         ></textarea>
       </div>
-      <button className='btn btn-success'>Update article</button>
+      <button className='btn btn-success'>Update announcement</button>
       <button
         onClick={() => props.setEditing(false)}
         className="btn btn-warning"
@@ -52,5 +52,5 @@ const EditArticleForm = (props) => {
   )
 }
 
-export default EditArticleForm
+export default EditAnnouncementForm
 

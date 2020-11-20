@@ -1,0 +1,32 @@
+[
+    {
+      "id":1,
+      "title":"lorem",
+      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis adipisci quia inventore rem odio, similique recusandae ratione dolores eligendi accusantium!",
+      "matchedWords":0
+    },
+    {
+      "id":2,
+      "title":"Minima",
+      "description":"Minima unde deleniti maiores repudiandae dolore fuga numquam tempora minus voluptatibus cupiditate ad molestiae voluptatum, quo harum nulla! Esse, optio nobis reiciendis molestiae ipsum et assumenda sed excepturi.",
+      "matchedWords":0
+    },
+    {
+      "id":3,
+      "title":"Text",
+      "description":"Porro id adipisci nobis. Atque omnis provident mollitia aut aliquid id ea? Laboriosam tempore adipisci similique cumque mollitia perspiciatis vero.",
+      "matchedWords":0
+    },
+    {
+      "id":4,
+      "title":"lorem",
+      "description":"Porro id adipisci nobis. Atque omnis provident mollitia aut aliquid id ea? Laboriosam tempore adipisci similique cumque mollitia perspiciatis vero.",
+      "matchedWords":0
+    },
+    {
+      "id":5,
+      "title":"lorem",
+      "description":"Esse, optio nobis reiciendis molestiae ipsum et assumenda sed excepturi. Magnam, ab necessitatibus aliquid maxime culpa hic adipisci quo et dolorum, perspiciatis, maiores odit fugit possimus? Illo, vel.",
+      "matchedWords":0
+    }
+  ]

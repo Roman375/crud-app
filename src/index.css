@@ -12,28 +12,25 @@ code {
     monospace;
 }
 
-
 .container {
   display: grid;
-  grid-template-areas: 
-  "one two";
+  grid-template-areas:
+   'one two'
+   'one two';
+  grid-template-columns: 50%;
   grid-gap: 30px;
   padding: 10px;
-}
-.one {
-  grid-area: one;
-}
-.two { 
-  grid-area: two;
+  width: 100%;
+  max-width: 1240px;
 }
 
-.search{
+.search {
   display: flex;
   justify-content: center;
   padding: 10px;
 }
 
-.empty{
+.empty {
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -43,3 +40,34 @@ code {
   margin-right: 5px;
 }
 
+.card {
+  width: 100%;
+}
+
+.card-body_show{
+  display: none;
+}
+
+.card-text {
+  overflow: hidden;
+  overflow-y: scroll;
+  max-height: 100px;
+}
+
+.card-checkbox{
+  margin-right: 10px;
+}
+.top-list{
+  display: none;
+  margin-top: 20px;
+}
+
+.article input[type=checkbox]:checked ~ .card-body_show {
+  display: block;
+}
+ input[type=checkbox]:checked ~ .card-body_show {
+  display: block;
+}
+.card-actions button{
+  margin-right: 5px;
+}
