@@ -1,4 +1,3 @@
-import { set } from 'date-fns'
 import React, { useState, useEffect } from 'react'
 import './App.css'
 import AddArticleForm from './components/AddAnnouncementForm'
@@ -19,7 +18,7 @@ const App = () => {
     useEffect(() => {
     setFiltredArtilcles(
       announcements.filter((announcement) => {
-        return announcement.description
+        return announcement.title
           .toLowerCase()
           .includes(search.toLocaleLowerCase())
       })
@@ -30,7 +29,7 @@ const App = () => {
   const findTop3 = (announcement) => {
     let articlesForSearch = []
     announcements.forEach((element) => {
-      if (element.id != announcement.id) {
+      if (element.id !== announcement.id) {
         articlesForSearch.push(element)
       }
     })
